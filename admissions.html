@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123b32">
+  <meta name="description" content="Explore the application process and admissions support at Hi-Tech College.">
+  <title>Admissions | Hi-Tech College</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html#home" aria-label="Hi-Tech College home"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>HI-TECH <b>COLLEGE</b></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="courses.html">Study</a><a href="research.html">Research</a><a href="events.html">Events</a><a href="updates.html">Updates</a><a href="campus.html">Campus life</a><a href="about.html">About</a><a href="login.html">Login</a><a href="portal.html">Portal preview</a><a class="nav-apply" href="admissions.html" aria-current="page">Apply now <span aria-hidden="true">↗</span></a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><span aria-hidden="true">◐</span><span>Dark mode</span></button>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero admissions-hero" aria-labelledby="admissions-title">
+      <div class="page-hero-content"><p class="eyebrow light"><span class="eyebrow-line"></span> Admissions</p><h1 id="admissions-title">Your next step<br><span>starts here.</span></h1><p>Explore your options, prepare at your own pace, and get support when you need it.</p></div>
+    </section>
+    <section class="admissions-process section-pad">
+      <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> The process</p><h2>Four steps.<br><span>One at a time.</span></h2></div><p class="section-description">Requirements and timelines vary by program. The admissions team can help you confirm the details for your situation.</p></div>
+      <div class="process-grid">
+        <article><span>01</span><h3>Explore</h3><p>Compare courses, learning formats, and areas that match your interests.</p><a href="courses.html">Browse courses ↗</a></article>
+        <article><span>02</span><h3>Prepare</h3><p>Review entry requirements and gather the materials listed for your program.</p><a href="#checklist">Open checklist ↓</a></article>
+        <article><span>03</span><h3>Apply</h3><p>Submit your application through the official admissions process.</p><a href="mailto:admissions@hitechcollege.edu">Ask admissions ↗</a></article>
+        <article><span>04</span><h3>Connect</h3><p>Get answers about next steps, campus visits, and student support.</p><a href="#questions">Read FAQs ↓</a></article>
+      </div>
+    </section>
+    <section class="checklist-section" id="checklist">
+      <div class="checklist-copy"><p class="eyebrow light"><span class="eyebrow-line"></span> Keep your place</p><h2>A little progress<br><span>adds up.</span></h2><p>Use this local checklist to keep track while you explore. Your selections stay in this page only.</p><div class="checklist-progress"><progress id="checklist-progress" value="0" max="5" aria-label="Application preparation progress"></progress><span id="checklist-status" aria-live="polite">0 of 5 steps checked</span></div></div>
+      <fieldset class="application-checklist" id="application-checklist"><legend>Preparation checklist</legend>
+        <label><input type="checkbox"><span>Choose a program to explore</span></label>
+        <label><input type="checkbox"><span>Review the program entry requirements</span></label>
+        <label><input type="checkbox"><span>Make a list of questions for admissions</span></label>
+        <label><input type="checkbox"><span>Gather the documents your program requests</span></label>
+        <label><input type="checkbox"><span>Confirm the official application steps</span></label>
+      </fieldset>
+    </section>
+    <section class="faq-section section-pad" id="questions">
+      <div><p class="eyebrow"><span class="eyebrow-line"></span> Common questions</p><h2>Good to <span>know.</span></h2><p class="section-description">For program-specific or current requirements, contact admissions directly.</p></div>
+      <div class="faq-list">
+        <details class="faq-item"><summary>How do I choose the right program?</summary><p>Start with the subjects and problems you enjoy. Compare course topics on the <a href="courses.html">courses page</a>, then contact admissions to talk through your options.</p></details>
+        <details class="faq-item"><summary>Where can I find current entry requirements?</summary><p>Requirements can vary by program and applicant background. Email <a href="mailto:admissions@hitechcollege.edu">admissions@hitechcollege.edu</a> for the latest official information.</p></details>
+        <details class="faq-item"><summary>Can I visit the campus?</summary><p>Contact admissions to ask about visit options and accessibility needs. You can also explore spaces and student life on the <a href="campus.html">campus page</a>.</p></details>
+        <details class="faq-item"><summary>Can I get help with my application?</summary><p>Yes. The admissions team can explain the process and point you to the right support. They cannot complete application materials on your behalf.</p></details>
+      </div>
+    </section>
+    <section class="admissions-contact"><p class="eyebrow light"><span class="eyebrow-line"></span> We can help</p><h2>Start with a<br><span>conversation.</span></h2><a class="button button-lime" href="mailto:admissions@hitechcollege.edu">Email admissions <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="index.html#home" aria-label="Hi-Tech College home"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>HI-TECH <b>COLLEGE</b></span></a><p>Curiosity has a place here.</p><a class="back-top" href="#top">Back to top ↑</a><span class="copyright">© 2026 Hi-Tech College</span></footer>
+</body>
+</html>

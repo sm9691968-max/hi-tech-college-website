@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123b32">
+  <meta name="description" content="Browse technology, design, and business courses at Hi-Tech College.">
+  <title>Courses | Hi-Tech College</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html#home" aria-label="Hi-Tech College home">
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span>HI-TECH <b>COLLEGE</b></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="courses.html" aria-current="page">Study</a>
+      <a href="research.html">Research</a>
+      <a href="events.html">Events</a>
+      <a href="updates.html">Updates</a>
+      <a href="campus.html">Campus life</a>
+      <a href="about.html">About</a>
+      <a href="login.html">Login</a>
+      <a href="portal.html">Portal preview</a>
+      <a class="nav-apply" href="admissions.html">Apply now <span aria-hidden="true">↗</span></a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><span aria-hidden="true">◐</span><span>Dark mode</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero courses-hero" aria-labelledby="courses-title">
+      <div class="page-hero-content">
+        <p class="eyebrow light"><span class="eyebrow-line"></span> Your next idea starts here</p>
+        <h1 id="courses-title">Find your<br><span>field.</span></h1>
+        <p>Four ways to turn curiosity into useful skills, meaningful work, and a future you can shape.</p>
+      </div>
+    </section>
+
+    <section class="course-list-section section-pad" aria-labelledby="course-list-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span> Programs of study</p>
+          <h2 id="course-list-title">Choose a <span>starting point.</span></h2>
+        </div>
+        <p class="section-description">Learn through projects, close collaboration, and a curriculum connected to the world outside campus.</p>
+      </div>
+      <div class="program-toolbar" aria-label="Filter courses">
+        <label class="course-search"><span aria-hidden="true">⌕</span><input id="course-search" type="search" placeholder="Search courses or topics" aria-label="Search courses or topics"></label>
+        <div class="filter-list" role="group" aria-label="Course category">
+          <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All courses</button>
+          <button class="filter-button" type="button" data-filter="technology" aria-pressed="false">Technology</button>
+          <button class="filter-button" type="button" data-filter="creative" aria-pressed="false">Creative</button>
+          <button class="filter-button" type="button" data-filter="business" aria-pressed="false">Business</button>
+        </div>
+        <span class="program-count" data-item-label="course" aria-live="polite">14 courses</span>
+      </div>
+      <div class="course-tools" aria-label="Course catalog tools">
+        <label class="course-sort-label" for="course-sort">Sort by
+          <select id="course-sort"><option value="name">Course name</option><option value="duration">Shortest duration</option><option value="category">Subject area</option></select>
+        </label>
+        <button class="course-tool-button" id="favorites-only" type="button" aria-pressed="false">Saved courses <span id="favorite-count">0</span></button>
+        <button class="course-tool-button" id="toggle-outlines" type="button" aria-pressed="false">Expand outlines</button>
+        <button class="course-tool-button" id="compare-courses" type="button" disabled>Compare <span id="compare-count">0</span></button>
+        <button class="course-tool-button" id="export-catalog" type="button">Download list ↓</button>
+      </div>
+
+      <div class="program-grid course-grid" id="course-grid">
+        <article class="program-card course-card" id="computer-science" data-category="technology" data-duration-years="4">
+          <div class="program-number">01 <span>TECHNOLOGY</span></div>
+          <h3>Computer Science</h3>
+          <p>Build a strong foundation in programming, systems, and software engineering. Learn to make reliable tools for real people.</p>
+          <div class="course-topics"><span>Programming</span><span>Software engineering</span><span>Team project</span></div>
+          <div class="program-meta"><span>Bachelor's degree</span><span>4 years</span></div>
+          <details class="course-details"><summary>Sample subjects and project</summary><div><p>Possible topics include algorithms, databases, software design, and secure systems.</p><p><b>Project idea:</b> Prototype a useful digital service and test it with people who might use it.</p></div></details>
+          <a class="course-action" href="admissions.html">Ask about this course <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="program-card course-card" id="digital-design" data-category="creative" data-duration-years="3">
+          <div class="program-number">02 <span>CREATIVE</span></div>
+          <h3>Digital Design</h3>
+          <p>Combine visual craft, research, and prototyping to create clear, inclusive digital experiences.</p>
+          <div class="course-topics"><span>Visual systems</span><span>UX research</span><span>Interactive media</span></div>
+          <div class="program-meta"><span>Bachelor's degree</span><span>3 years</span></div>
+          <details class="course-details"><summary>Sample subjects and project</summary><div><p>Possible topics include visual communication, interface design, accessibility, and prototyping.</p><p><b>Project idea:</b> Research a user need and develop an inclusive interactive concept.</p></div></details>
+          <a class="course-action" href="admissions.html">Ask about this course <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="program-card course-card" id="data-ai" data-category="technology" data-duration-years="4">
+          <div class="program-number">03 <span>TECHNOLOGY</span></div>
+          <h3>Data &amp; AI</h3>
+          <p>Explore data science, machine learning, and responsible AI through practical, evidence-led projects.</p>
+          <div class="course-topics"><span>Data science</span><span>Machine learning</span><span>Responsible AI</span></div>
+          <div class="program-meta"><span>Bachelor's degree</span><span>4 years</span></div>
+          <details class="course-details"><summary>Sample subjects and project</summary><div><p>Possible topics include statistics, data visualization, machine learning, and model evaluation.</p><p><b>Project idea:</b> Investigate a dataset, explain its limitations, and present a responsible recommendation.</p></div></details>
+          <a class="course-action" href="admissions.html">Ask about this course <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="program-card course-card" id="business-innovation" data-category="business" data-duration-years="3">
+          <div class="program-number">04 <span>BUSINESS</span></div>
+          <h3>Business Innovation</h3>
+          <p>Learn how to test ideas, understand markets, and grow sustainable organizations with purpose.</p>
+          <div class="course-topics"><span>Entrepreneurship</span><span>Market strategy</span><span>Business lab</span></div>
+          <div class="program-meta"><span>Bachelor's degree</span><span>3 years</span></div>
+          <details class="course-details"><summary>Sample subjects and project</summary><div><p>Possible topics include customer research, business models, operations, and sustainable growth.</p><p><b>Project idea:</b> Test an early-stage service concept and outline a responsible launch plan.</p></div></details>
+          <a class="course-action" href="admissions.html">Ask about this course <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="program-card course-card" id="cybersecurity" data-category="technology" data-duration-years="4">
+          <div class="program-number">05 <span>TECHNOLOGY</span></div><h3>Cybersecurity &amp; Digital Trust</h3><p>Study secure systems, privacy, threat analysis, and the human side of digital safety.</p><div class="course-topics"><span>Network security</span><span>Privacy</span><span>Risk analysis</span></div><div class="program-meta"><span>Illustrative program</span><span>4 years</span></div><details class="course-details"><summary>Sample subjects and project</summary><div><p>Possible topics include threat modeling, secure development, digital forensics, and privacy engineering.</p><p><b>Project idea:</b> Review a sample service and propose a safer user journey.</p></div></details><a class="course-action" href="admissions.html">Ask about this course <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="program-card course-card" id="software-engineering" data-category="technology" data-duration-years="4">
+          <div class="program-number">06 <span>TECHNOLOGY</span></div><h3>Software Engineering</h3><p>Design, build, test, and maintain software with a focus on teamwork and dependable systems.</p><div class="course-topics"><span>Architecture</span><span>Testing</span><span>DevOps</span></div><div class="program-meta"><span>Illustrative program</span><span>4 years</span></div><details class="course-details"><summary>Sample subjects and project</summary><div><p>Possible topics include software architecture, automated testing, distributed systems, and delivery practices.</p><p><b>Project idea:</b> Build a small team application with a documented testing plan.</p></div></details><a class="course-action" href="admissions.html">Ask about this course <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="program-card course-card" id="information-systems" data-category="technology" data-duration-years="3">
+          <div class="program-number">07 <span>TECHNOLOGY</span></div><h3>Information Systems</h3><p>Connect people, organizations, data, and technology to improve how services work.</p><div class="course-topics"><span>Systems analysis</span><span>Databases</span><span>Service design</span></div><div class="program-meta"><span>Illustrative program</span><span>3 years</span></div><details class="course-details"><summary>Sample subjects and project</summary><div><p>Possible topics include process mapping, database design, systems analysis, and technology governance.</p><p><b>Project idea:</b> Map a service workflow and prototype one improvement.</p></div></details><a class="course-action" href="admissions.html">Ask about this course <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="program-card course-card" id="cloud-systems" data-category="technology" data-duration-years="4">
+          <div class="program-number">08 <span>TECHNOLOGY</span></div><h3>Cloud Systems Engineering</h3><p>Explore modern infrastructure, automation, reliability, and responsible cloud operations.</p><div class="course-topics"><span>Cloud architecture</span><span>Automation</span><span>Reliability</span></div><div class="program-meta"><span>Illustrative program</span><span>4 years</span></div><details class="course-details"><summary>Sample subjects and project</summary><div><p>Possible topics include cloud platforms, infrastructure as code, observability, and cost-aware design.</p><p><b>Project idea:</b> Plan a resilient hosting setup for a small digital service.</p></div></details><a class="course-action" href="admissions.html">Ask about this course <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="program-card course-card" id="product-service-design" data-category="creative" data-duration-years="3">
+          <div class="program-number">09 <span>CREATIVE</span></div><h3>Product &amp; Service Design</h3><p>Research needs and shape practical products and services through iterative design.</p><div class="course-topics"><span>User research</span><span>Prototyping</span><span>Service journeys</span></div><div class="program-meta"><span>Illustrative program</span><span>3 years</span></div><details class="course-details"><summary>Sample subjects and project</summary><div><p>Possible topics include design research, service blueprints, usability testing, and product strategy.</p><p><b>Project idea:</b> Prototype a clearer way to complete a common service task.</p></div></details><a class="course-action" href="admissions.html">Ask about this course <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="program-card course-card" id="interaction-game-design" data-category="creative" data-duration-years="3">
+          <div class="program-number">10 <span>CREATIVE</span></div><h3>Interaction &amp; Game Design</h3><p>Combine narrative, interaction, visual systems, and prototyping for digital play.</p><div class="course-topics"><span>Interaction</span><span>Game systems</span><span>Experience design</span></div><div class="program-meta"><span>Illustrative program</span><span>3 years</span></div><details class="course-details"><summary>Sample subjects and project</summary><div><p>Possible topics include player experience, interaction patterns, mechanics, and accessible play.</p><p><b>Project idea:</b> Create and test a short playable prototype.</p></div></details><a class="course-action" href="admissions.html">Ask about this course <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="program-card course-card" id="creative-computing" data-category="creative" data-duration-years="3">
+          <div class="program-number">11 <span>CREATIVE</span></div><h3>Creative Computing</h3><p>Use code as a creative material across interactive media, installations, and tools.</p><div class="course-topics"><span>Creative code</span><span>Generative media</span><span>Physical computing</span></div><div class="program-meta"><span>Illustrative program</span><span>3 years</span></div><details class="course-details"><summary>Sample subjects and project</summary><div><p>Possible topics include creative coding, digital fabrication, generative visuals, and interactive sound.</p><p><b>Project idea:</b> Build an interactive installation around a question you care about.</p></div></details><a class="course-action" href="admissions.html">Ask about this course <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="program-card course-card" id="business-analytics" data-category="business" data-duration-years="3">
+          <div class="program-number">12 <span>BUSINESS</span></div><h3>Business Analytics</h3><p>Turn data into clear decisions with careful analysis, communication, and context.</p><div class="course-topics"><span>Applied statistics</span><span>Data storytelling</span><span>Decision science</span></div><div class="program-meta"><span>Illustrative program</span><span>3 years</span></div><details class="course-details"><summary>Sample subjects and project</summary><div><p>Possible topics include business metrics, forecasting, visualization, and evidence-based decisions.</p><p><b>Project idea:</b> Analyze a sample business question and present a recommendation with caveats.</p></div></details><a class="course-action" href="admissions.html">Ask about this course <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="program-card course-card" id="venture-design" data-category="business" data-duration-years="3">
+          <div class="program-number">13 <span>BUSINESS</span></div><h3>Entrepreneurship &amp; Venture Design</h3><p>Test early ideas, understand customers, and plan ventures with a clear purpose.</p><div class="course-topics"><span>Customer discovery</span><span>Business models</span><span>Venture lab</span></div><div class="program-meta"><span>Illustrative program</span><span>3 years</span></div><details class="course-details"><summary>Sample subjects and project</summary><div><p>Possible topics include opportunity discovery, venture finance, experimentation, and responsible growth.</p><p><b>Project idea:</b> Test a small service concept and explain what you would validate next.</p></div></details><a class="course-action" href="admissions.html">Ask about this course <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="program-card course-card" id="sustainable-technology" data-category="business" data-duration-years="3">
+          <div class="program-number">14 <span>BUSINESS</span></div><h3>Sustainable Technology</h3><p>Explore how organizations can assess technology choices alongside environmental and social impacts.</p><div class="course-topics"><span>Impact assessment</span><span>Circular systems</span><span>Responsible innovation</span></div><div class="program-meta"><span>Illustrative program</span><span>3 years</span></div><details class="course-details"><summary>Sample subjects and project</summary><div><p>Possible topics include lifecycle thinking, sustainable operations, impact measurement, and policy context.</p><p><b>Project idea:</b> Compare two technology approaches using a transparent impact framework.</p></div></details><a class="course-action" href="admissions.html">Ask about this course <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+      <p class="empty-state" id="empty-state" hidden>No courses in this area just yet. Choose another category.</p>
+      <p class="course-outline-note">Topics and project briefs are illustrative examples, not official module lists. Contact admissions for current program information.</p>
+    </section>
+
+    <dialog class="compare-dialog" id="compare-dialog" aria-labelledby="compare-title">
+      <div class="compare-dialog-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> SIDE BY SIDE</p><h2 id="compare-title">Compare courses.</h2></div><button type="button" class="compare-close" id="compare-close" aria-label="Close comparison">×</button></div>
+      <div class="compare-table-wrap" id="compare-table-wrap"></div>
+    </dialog>
+
+    <section class="course-cta">
+      <div><p class="eyebrow light"><span class="eyebrow-line"></span> Still deciding?</p><h2>Let's find your<br><span>next step.</span></h2></div>
+      <a class="button button-lime" href="index.html#apply">Talk to admissions <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html#home" aria-label="Hi-Tech College home">
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span>HI-TECH <b>COLLEGE</b></span>
+    </a>
+    <p>Curiosity has a place here.</p>
+    <a class="back-top" href="#top">Back to top ↑</a>
+    <span class="copyright">© 2026 Hi-Tech College</span>
+  </footer>
+</body>
+</html>

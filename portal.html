@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123b32">
+  <meta name="description" content="Preview the Hi-Tech College student and applicant portal interface.">
+  <title>Portal Preview | Hi-Tech College</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html#home" aria-label="Hi-Tech College home"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>HI-TECH <b>COLLEGE</b></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="courses.html">Study</a><a href="research.html">Research</a><a href="events.html">Events</a><a href="updates.html">Updates</a><a href="campus.html">Campus life</a><a href="about.html">About</a><a href="login.html">Login</a><a href="portal.html" aria-current="page">Portal preview</a><a class="nav-apply" href="admissions.html">Apply now <span aria-hidden="true">↗</span></a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><span aria-hidden="true">◐</span><span>Dark mode</span></button>
+    </nav>
+  </header>
+
+  <main class="portal-page">
+    <section class="portal-heading">
+      <div>
+        <p class="eyebrow"><span class="eyebrow-line"></span> HI-TECH / PORTAL PREVIEW</p>
+        <h1>Your campus,<br><span>at a glance.</span></h1>
+      </div>
+      <p class="portal-demo-note"><span class="demo-dot"></span> Preview interface · sample information only</p>
+    </section>
+
+    <section class="portal-workspace" aria-label="Portal preview workspace">
+      <div class="portal-topline">
+        <div><span class="portal-avatar" aria-hidden="true">M</span><span><b>Maya Chen</b><small>Undergraduate · Demo account</small></span></div>
+        <span class="portal-term">FALL TERM <b>PREVIEW</b></span>
+      </div>
+
+      <div class="portal-layout">
+        <nav class="portal-sidebar" aria-label="Portal sections">
+          <button type="button" data-portal-tab="overview" aria-controls="portal-panel-overview" aria-pressed="true"><span>Overview</span><small>01</small></button>
+          <button type="button" data-portal-tab="courses" aria-controls="portal-panel-courses" aria-pressed="false"><span>My courses</span><small>02</small></button>
+          <button type="button" data-portal-tab="register" aria-controls="portal-panel-register" aria-pressed="false"><span>Register</span><small>03</small></button>
+          <button type="button" data-portal-tab="applicant" aria-controls="portal-panel-applicant" aria-pressed="false"><span>Applicant tracker</span><small>04</small></button>
+          <button type="button" class="portal-reset-button" id="reset-portal-preview">Reset preview</button>
+        </nav>
+        <div class="portal-content">
+
+      <section class="portal-panel" id="portal-panel-overview" data-portal-panel="overview" aria-labelledby="overview-heading">
+        <div class="portal-section-title"><div><p class="eyebrow"><span class="eyebrow-line"></span> WEEKLY TIMETABLE · FALL TERM</p><h2 id="overview-heading">Good morning, Maya.</h2></div><a class="portal-inline-link" href="courses.html">Browse programs <span aria-hidden="true">↗</span></a></div>
+        <div class="portal-overview-grid">
+          <div class="portal-main-column">
+            <section class="portal-module schedule-module">
+              <div class="portal-module-heading"><h3>Weekly timetable</h3><div class="schedule-controls"><button type="button" data-week-shift="-1" aria-label="Previous week">←</button><span id="schedule-week-label" aria-live="polite"></span><button type="button" data-week-shift="1" aria-label="Next week">→</button><button type="button" id="export-schedule">Export calendar ↓</button></div></div>
+              <article class="schedule-row"><time data-weekday="1"><span class="schedule-day">MON</span><span class="schedule-date">28</span><span class="schedule-time">09:00</span></time><span class="schedule-marker marker-lime"></span><div><b>Intro to Software Systems</b><span>CS 110 · Computing Lab A204</span></div><span class="schedule-duration">90 min</span></article>
+              <article class="schedule-row"><time data-weekday="2"><span class="schedule-day">TUE</span><span class="schedule-date">29</span><span class="schedule-time">11:15</span></time><span class="schedule-marker marker-coral"></span><div><b>Human-Centered Design</b><span>DES 120 · Design Studio 4</span></div><span class="schedule-duration">60 min</span></article>
+              <article class="schedule-row"><time data-weekday="4"><span class="schedule-day">THU</span><span class="schedule-date">01</span><span class="schedule-time">14:00</span></time><span class="schedule-marker marker-mint"></span><div><b>Data &amp; Society</b><span>DATA 210 · Forum 2</span></div><span class="schedule-duration">75 min</span></article>
+            </section>
+            <section class="portal-module">
+              <div class="portal-module-heading"><h3>Learning progress</h3><button type="button" class="portal-text-button" data-open-portal-tab="courses">View courses ↗</button></div>
+              <div class="progress-course"><div><b>Computer Science</b><span>4 of 6 learning units</span></div><progress value="66" max="100" aria-label="Computer Science sample progress: 66 percent"></progress><strong>66%</strong></div>
+              <div class="progress-course"><div><b>Digital Design</b><span>2 of 5 learning units</span></div><progress value="40" max="100" aria-label="Digital Design sample progress: 40 percent"></progress><strong>40%</strong></div>
+            </section>
+          </div>
+          <aside class="portal-side-column">
+            <section class="portal-module task-module"><div class="portal-module-heading"><h3>Coming up</h3><span>THIS WEEK</span></div>
+              <div class="task-filters" role="group" aria-label="Filter tasks"><button type="button" data-task-filter="all" aria-pressed="true">All</button><button type="button" data-task-filter="open" aria-pressed="false">To do</button><button type="button" data-task-filter="done" aria-pressed="false">Done</button></div>
+              <div class="task-row" data-task-id="prototype-critique"><time class="task-date" datetime="2026-10-01">THU<br><b>01</b></time><p><b>Prototype critique</b><span>DES 120 · Wireframe draft · 10:00</span></p><button class="task-complete" type="button" data-task-complete aria-pressed="false">Mark done</button></div>
+              <div class="task-row" data-task-id="data-reflection"><time class="task-date" datetime="2026-10-02">FRI<br><b>02</b></time><p><b>Data reflection</b><span>DATA 210 · Short response · 16:00</span></p><button class="task-complete" type="button" data-task-complete aria-pressed="false">Mark done</button></div>
+            </section>
+            <section class="portal-announcement"><p class="eyebrow"><span class="eyebrow-line"></span> STUDENT SUPPORT</p><h3>Learning advisor drop-ins</h3><p>Bring questions about study plans, project feedback, or finding the right campus resource.</p><a href="mailto:admissions@hitechcollege.edu">Ask the college team <span aria-hidden="true">↗</span></a></section>
+          </aside>
+        </div>
+      </section>
+
+      <section class="portal-panel" id="portal-panel-courses" data-portal-panel="courses" aria-labelledby="my-courses-heading" hidden>
+        <div class="portal-section-title"><div><p class="eyebrow"><span class="eyebrow-line"></span> YOUR LEARNING</p><h2 id="my-courses-heading">My courses.</h2></div><span class="portal-panel-count">3 SAMPLE COURSES</span></div>
+        <div class="portal-course-list">
+          <article class="portal-course-row"><span class="course-code">CS<br>110</span><div><span class="course-category-label">COMPUTING</span><h3>Intro to Software Systems</h3><p>Programming foundations, systems thinking, and collaborative software practice.</p><div class="portal-progress-line"><progress value="66" max="100" aria-label="Intro to Software Systems sample progress: 66 percent"></progress><span>66% complete</span></div></div><a href="courses.html#computer-science" aria-label="View Computer Science course details">↗</a></article>
+          <article class="portal-course-row"><span class="course-code course-code-coral">DES<br>120</span><div><span class="course-category-label">DESIGN</span><h3>Human-Centered Design</h3><p>Research, visual communication, prototyping, and accessible interfaces.</p><div class="portal-progress-line"><progress value="40" max="100" aria-label="Human-Centered Design sample progress: 40 percent"></progress><span>40% complete</span></div></div><a href="courses.html#digital-design" aria-label="View Digital Design course details">↗</a></article>
+          <article class="portal-course-row"><span class="course-code course-code-mint">DATA<br>210</span><div><span class="course-category-label">COMPUTING</span><h3>Data &amp; Society</h3><p>Data reasoning, machine learning concepts, model evaluation, and responsible use.</p><div class="portal-progress-line"><progress value="25" max="100" aria-label="Data and Society sample progress: 25 percent"></progress><span>25% complete</span></div></div><a href="courses.html#data-ai" aria-label="View Data and AI course details">↗</a></article>
+        </div>
+      </section>
+
+      <section class="portal-panel" id="portal-panel-register" data-portal-panel="register" aria-labelledby="register-heading" hidden>
+        <div class="portal-section-title"><div><p class="eyebrow"><span class="eyebrow-line"></span> COURSE PLANNER</p><h2 id="register-heading">Build a sample schedule.</h2></div><span class="portal-panel-count">PREVIEW ONLY</span></div>
+        <div class="registration-layout">
+          <form class="registration-form" id="registration-form">
+            <label for="registration-course">Choose a course</label>
+            <select id="registration-course" name="course" required><option value="" disabled selected>Select a course</option><option value="Computer Science">Computer Science</option><option value="Digital Design">Digital Design</option><option value="Data & AI">Data &amp; AI</option><option value="Business Innovation">Business Innovation</option></select>
+            <label for="registration-term">Planning term</label>
+            <select id="registration-term" name="term"><option>Sample term · 2026</option><option>Next sample term</option></select>
+            <button class="button button-dark" type="submit">Add to preview <span aria-hidden="true">+</span></button>
+            <p class="form-message" id="registration-message" role="status" aria-live="polite"></p>
+          </form>
+          <section class="registration-summary"><div class="portal-module-heading"><h3>Planned courses</h3><span id="registration-count">2 selected</span></div><p>Saved in this browser only. This preview does not reserve a place or submit enrollment.</p><ul id="registration-list"><li data-course="Computer Science"><span>Computer Science</span><b>CORE</b><button type="button" data-remove-course="Computer Science" aria-label="Remove Computer Science">×</button></li><li data-course="Digital Design"><span>Digital Design</span><b>ELECTIVE</b><button type="button" data-remove-course="Digital Design" aria-label="Remove Digital Design">×</button></li></ul></section>
+        </div>
+      </section>
+
+      <section class="portal-panel" id="portal-panel-applicant" data-portal-panel="applicant" aria-labelledby="applicant-heading" hidden>
+        <div class="portal-section-title"><div><p class="eyebrow"><span class="eyebrow-line"></span> APPLICANT VIEW</p><h2 id="applicant-heading">A clear next step.</h2></div><span class="portal-panel-count">SAMPLE APPLICATION</span></div>
+        <div class="applicant-layout">
+          <section class="applicant-status"><div class="application-status-head"><span class="status-indicator"></span><div><b>Application in progress</b><span>Sample status · no real application connected</span></div></div><div class="applicant-check-progress"><progress id="applicant-progress" value="1" max="4" aria-label="Application preparation progress"></progress><span id="applicant-progress-label" aria-live="polite">1 of 4 steps complete</span></div><ol class="application-steps"><li class="step-complete"><label><input type="checkbox" data-applicant-step checked><span>01</span><span><b>Explore programs</b><small>Review courses and areas of study</small></span></label></li><li class="step-current"><label><input type="checkbox" data-applicant-step><span>02</span><span><b>Prepare materials</b><small>Check the requirements with admissions</small></span></label></li><li><label><input type="checkbox" data-applicant-step><span>03</span><span><b>Submit application</b><small>Use the official application process</small></span></label></li><li><label><input type="checkbox" data-applicant-step><span>04</span><span><b>Receive an update</b><small>Check your email for official communication</small></span></label></li></ol></section>
+          <aside class="applicant-help"><p class="eyebrow"><span class="eyebrow-line"></span> NEED A HAND?</p><h3>Ask a real person.</h3><p>Admissions can confirm current requirements, dates, and the right place to submit your application.</p><a class="button button-dark" href="mailto:admissions@hitechcollege.edu">Contact admissions <span aria-hidden="true">↗</span></a><a class="applicant-checklist-link" href="admissions.html#checklist">Open preparation checklist <span aria-hidden="true">↗</span></a></aside>
+        </div>
+      </section>
+        </div>
+      </div>
+      <p class="portal-footnote">Preview interface for demonstration. Courses, names, dates, schedule, and progress above are sample data and are not connected to a college system.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="index.html#home" aria-label="Hi-Tech College home"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>HI-TECH <b>COLLEGE</b></span></a><p>Curiosity has a place here.</p><a class="back-top" href="#top">Back to top ↑</a><span class="copyright">© 2026 Hi-Tech College</span></footer>
+</body>
+</html>

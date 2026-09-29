@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123b32">
+  <meta name="description" content="Sign in to the Hi-Tech College student portal.">
+  <title>Student Login | Hi-Tech College</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="login-page">
+  <header class="site-header">
+    <a class="brand" href="index.html#home" aria-label="Hi-Tech College home">
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span>HI-TECH <b>COLLEGE</b></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="courses.html">Study</a>
+      <a href="research.html">Research</a>
+      <a href="events.html">Events</a>
+      <a href="updates.html">Updates</a>
+      <a href="campus.html">Campus life</a>
+      <a href="about.html">About</a>
+      <a href="login.html" aria-current="page">Login</a>
+      <a href="portal.html">Portal preview</a>
+      <a class="nav-apply" href="admissions.html">Apply now <span aria-hidden="true">↗</span></a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><span aria-hidden="true">◐</span><span>Dark mode</span></button>
+    </nav>
+  </header>
+
+  <main class="login-main">
+    <section class="login-visual" aria-label="Hi-Tech College campus">
+      <div class="login-visual-shade"></div>
+      <div class="login-visual-copy">
+        <p class="eyebrow light"><span class="eyebrow-line"></span> Welcome back</p>
+        <h1>Your next chapter<br>is already <span>in motion.</span></h1>
+        <p>Pick up where you left off. Your classes, projects, and college community are waiting.</p>
+      </div>
+    </section>
+
+    <section class="login-panel" aria-labelledby="login-title">
+      <div class="login-form-wrap">
+        <p class="eyebrow"><span class="eyebrow-line"></span> Student portal</p>
+        <h2 id="login-title">Sign in.</h2>
+        <p class="login-intro">Use your college account to continue.</p>
+        <form class="student-login-form" id="login-form">
+          <label for="student-email">College email</label>
+          <input id="student-email" name="email" type="email" autocomplete="username" required placeholder="name@hitechcollege.edu">
+          <label for="password">Password</label>
+          <div class="password-field">
+            <input id="password" name="password" type="password" autocomplete="current-password" minlength="8" required placeholder="Enter your password">
+            <button class="password-toggle" id="password-toggle" type="button" aria-label="Show password" aria-pressed="false">Show</button>
+          </div>
+          <div class="login-options">
+            <label class="remember-option"><input type="checkbox" name="remember"> <span>Remember me</span></label>
+            <a href="mailto:admissions@hitechcollege.edu?subject=Student%20account%20help">Forgot password?</a>
+          </div>
+          <button class="button button-dark login-submit" type="submit">Sign in <span aria-hidden="true">↗</span></button>
+          <p class="form-message" id="login-message" role="status" aria-live="polite"></p>
+          <p class="login-demo-note">Student portal sign-in is a demo and is not connected to an account system.</p>
+        </form>
+        <div class="login-help"><span>Need help getting started?</span><a href="portal.html">Explore portal preview <span aria-hidden="true">↗</span></a><a href="index.html#apply">Contact admissions <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <a class="login-back" href="index.html">← Back to home</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html#home" aria-label="Hi-Tech College home">
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span>HI-TECH <b>COLLEGE</b></span>
+    </a>
+    <p>Curiosity has a place here.</p>
+    <a class="back-top" href="#top">Back to top ↑</a>
+    <span class="copyright">© 2026 Hi-Tech College</span>
+  </footer>
+</body>
+</html>

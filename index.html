@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123b32">
+  <meta name="description" content="Explore technology, design, and business programs at Hi-Tech College. Find your direction and build what comes next.">
+  <title>Hi-Tech College | Make what's next</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html#home" aria-label="Hi-Tech College home">
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span>HI-TECH <b>COLLEGE</b></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+      <span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="courses.html">Study</a>
+      <a href="research.html">Research</a>
+      <a href="events.html">Events</a>
+      <a href="updates.html">Updates</a>
+      <a href="campus.html">Campus life</a>
+      <a href="about.html">About</a>
+      <a href="login.html">Login</a>
+      <a href="portal.html">Portal preview</a>
+      <a class="nav-apply" href="admissions.html">Apply now <span aria-hidden="true">↗</span></a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><span aria-hidden="true">◐</span><span>Dark mode</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <video class="hero-video" id="hero-video" muted playsinline preload="metadata" poster="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&amp;fit=crop&amp;w=1600&amp;q=85" aria-hidden="true" tabindex="-1">
+        <source src="https://videos.pexels.com/video-files/7683332/7683332-hd_1920_1080_30fps.mp4#t=0,20" type="video/mp4">
+      </video>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow light"><span class="eyebrow-line"></span> A college for curious minds</p>
+        <h1 id="hero-title">Hi-Tech<br>College.</h1>
+        <p class="hero-copy">Make what's next. Turn big questions into practical skills, work across disciplines, and build a future that feels like yours.</p>
+        <div class="hero-actions">
+          <a class="button button-lime" href="courses.html">Explore programs <span aria-hidden="true">↗</span></a>
+          <a class="text-link light-link" href="about.html">Get to know us <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <a class="hero-scroll" href="#programs" aria-label="Scroll to study programs">↓</a>
+      <p class="hero-video-credit">Campus footage: RDNE Stock project / Pexels · Illustrative stock video</p>
+      <button class="hero-video-toggle" id="hero-video-toggle" type="button" aria-label="Play intro video" aria-pressed="false"><span aria-hidden="true">▶</span><span>Play video</span></button>
+    </section>
+
+    <section class="intro-strip" id="about">
+      <p class="intro-statement">A good education doesn't just prepare you for the future.<br><span>It gives you a hand in making it.</span></p>
+      <div class="intro-note"><span class="note-dot"></span><p>Hands-on learning. Open minds.<br>Room to find your own way.</p></div>
+    </section>
+
+    <section class="programs section-pad" id="programs" aria-labelledby="programs-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span> Find your direction</p>
+          <h2 id="programs-title">Learn by <span>doing.</span></h2>
+        </div>
+        <p class="section-description">Choose a starting point. Our programs bring ideas out of the classroom and into the world.</p>
+      </div>
+      <div class="program-toolbar" aria-label="Filter programs">
+        <div class="filter-list" role="group" aria-label="Program category">
+          <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All programs</button>
+          <button class="filter-button" type="button" data-filter="technology" aria-pressed="false">Technology</button>
+          <button class="filter-button" type="button" data-filter="creative" aria-pressed="false">Creative</button>
+          <button class="filter-button" type="button" data-filter="business" aria-pressed="false">Business</button>
+        </div>
+        <span class="program-count" aria-live="polite">04 programs</span>
+      </div>
+      <div class="program-grid" id="program-grid">
+        <article class="program-card" data-category="technology">
+          <div class="program-number">01 <span>TECHNOLOGY</span></div>
+          <h3>Computer Science</h3>
+          <p>Think in systems. Build software that makes everyday life work better.</p>
+          <div class="program-meta"><span>Undergraduate</span><span>4 years</span></div>
+          <a class="card-arrow" href="courses.html#computer-science" aria-label="View Computer Science course">↗</a>
+        </article>
+        <article class="program-card" data-category="creative">
+          <div class="program-number">02 <span>CREATIVE</span></div>
+          <h3>Digital Design</h3>
+          <p>Bring sharp ideas to life through visual communication and thoughtful design.</p>
+          <div class="program-meta"><span>Undergraduate</span><span>3 years</span></div>
+          <a class="card-arrow" href="courses.html#digital-design" aria-label="View Digital Design course">↗</a>
+        </article>
+        <article class="program-card" data-category="technology">
+          <div class="program-number">03 <span>TECHNOLOGY</span></div>
+          <h3>Data &amp; AI</h3>
+          <p>Find the story in the data and shape more responsible intelligent tools.</p>
+          <div class="program-meta"><span>Undergraduate</span><span>4 years</span></div>
+          <a class="card-arrow" href="courses.html#data-ai" aria-label="View Data and AI course">↗</a>
+        </article>
+        <article class="program-card" data-category="business">
+          <div class="program-number">04 <span>BUSINESS</span></div>
+          <h3>Business Innovation</h3>
+          <p>Learn to turn a promising idea into an enterprise with purpose.</p>
+          <div class="program-meta"><span>Undergraduate</span><span>3 years</span></div>
+          <a class="card-arrow" href="courses.html#business-innovation" aria-label="View Business and Innovation course">↗</a>
+        </article>
+      </div>
+      <p class="empty-state" id="empty-state" hidden>No programs in this area just yet. Choose another category.</p>
+    </section>
+
+    <section class="learning-method section-pad" aria-labelledby="learning-method-title">
+      <div class="section-heading">
+        <div><p class="eyebrow"><span class="eyebrow-line"></span> The Hi-Tech approach</p><h2 id="learning-method-title">Learn it.<br><span>Make it matter.</span></h2></div>
+        <p class="section-description">Strong foundations, hands-on practice, and useful feedback belong in the same learning experience.</p>
+      </div>
+      <div class="method-grid">
+        <article class="method-step">
+          <span class="method-step-label">01 / UNDERSTAND</span>
+          <h3>Start with the why.</h3>
+          <p>Build the concepts and methods behind your subject, then connect them to questions people are working on now.</p>
+          <span class="method-setting">SEMINARS + FOUNDATIONS</span>
+        </article>
+        <article class="method-step">
+          <span class="method-step-label">02 / EXPERIMENT</span>
+          <h3>Make a first version.</h3>
+          <p>Work in teams to sketch, code, model, test, and improve ideas in studios and project spaces.</p>
+          <span class="method-setting">STUDIOS + PROJECTS</span>
+        </article>
+        <article class="method-step">
+          <span class="method-step-label">03 / REFLECT</span>
+          <h3>Share what you learn.</h3>
+          <p>Present your thinking, hear a range of perspectives, and explain the choices behind your work.</p>
+          <span class="method-setting">CRITIQUES + SHOWCASES</span>
+        </article>
+      </div>
+      <details class="project-example">
+        <summary><span class="project-example-label">A SAMPLE BRIEF</span><strong>What could a student project look like?</strong><span class="project-example-toggle" aria-hidden="true">+</span></summary>
+        <div class="project-example-content">
+          <p><b>Challenge:</b> Help new students find a study space that fits their needs.</p>
+          <ul><li>Talk with students about how they choose where to work.</li><li>Map the information and accessibility details that matter.</li><li>Prototype a simple guide and test it with potential users.</li></ul>
+          <a href="courses.html">Explore related courses <span aria-hidden="true">↗</span></a>
+        </div>
+      </details>
+    </section>
+
+    <section class="research-preview section-pad" aria-labelledby="research-preview-title">
+      <div class="section-heading">
+        <div><p class="eyebrow"><span class="eyebrow-line"></span> Ideas in motion</p><h2 id="research-preview-title">Questions that<br><span>reach beyond campus.</span></h2></div>
+        <p class="section-description">Explore work at the intersection of technology, people, and the systems we share.</p>
+      </div>
+      <div class="research-preview-grid">
+        <a class="research-teaser teaser-ai" href="research.html"><span>COMPUTING / 01</span><strong>Human-centered AI</strong><b aria-hidden="true">↗</b></a>
+        <a class="research-teaser teaser-climate" href="research.html"><span>ENVIRONMENT / 02</span><strong>Climate &amp; energy</strong><b aria-hidden="true">↗</b></a>
+        <a class="research-teaser teaser-design" href="research.html"><span>DESIGN / 03</span><strong>Inclusive systems</strong><b aria-hidden="true">↗</b></a>
+      </div>
+      <a class="text-link research-more" href="research.html">Explore research <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="experience" id="experience" aria-labelledby="experience-title">
+      <div class="experience-image" role="img" aria-label="Students working together around a table"></div>
+      <div class="experience-copy">
+        <p class="eyebrow light"><span class="eyebrow-line"></span> More than a classroom</p>
+        <h2 id="experience-title">Your next idea<br>needs <span>good company.</span></h2>
+        <p>Learn alongside people who see the world differently. Make things together, ask better questions, and find support at every step.</p>
+        <a class="text-link light-link" href="campus.html">See yourself here <span aria-hidden="true">↗</span></a>
+        <div class="experience-facts">
+          <div><strong>Small teams</strong><span>Work closely with your peers</span></div>
+          <div><strong>Real projects</strong><span>Put new skills to work early</span></div>
+          <div><strong>Room to explore</strong><span>Change direction as you grow</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="apply-section section-pad" id="apply" aria-labelledby="apply-title">
+      <div class="apply-heading">
+        <p class="eyebrow"><span class="eyebrow-line"></span> Your next chapter</p>
+        <h2 id="apply-title">Let's start<br><span>with a question.</span></h2>
+        <p>Tell us what you're curious about. Our admissions team will help you find the next step.</p>
+        <div class="contact-note"><span class="contact-icon" aria-hidden="true">↗</span><span>Admissions<br><a href="mailto:admissions@hitechcollege.edu">admissions@hitechcollege.edu</a></span></div>
+      </div>
+      <form class="inquiry-form" id="inquiry-form">
+        <div class="field-row">
+          <label>First name<input name="firstName" autocomplete="given-name" required placeholder="Your first name"></label>
+          <label>Last name<input name="lastName" autocomplete="family-name" required placeholder="Your last name"></label>
+        </div>
+        <label>Email address<input name="email" type="email" autocomplete="email" required placeholder="you@example.com"></label>
+        <label>I'm interested in
+          <select name="program" required>
+            <option value="" disabled selected>Choose a program</option>
+            <option>Computer Science</option>
+            <option>Digital Design</option>
+            <option>Data &amp; AI</option>
+            <option>Business Innovation</option>
+            <option>I'm still exploring</option>
+          </select>
+        </label>
+        <button class="button button-dark" type="submit">Request information <span aria-hidden="true">↗</span></button>
+        <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+        <p class="form-privacy">This demo form doesn't send or store your information.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html#home" aria-label="Hi-Tech College home">
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span>HI-TECH <b>COLLEGE</b></span>
+    </a>
+    <p>Curiosity has a place here.</p>
+    <a class="back-top" href="index.html#home">Back to top ↑</a>
+    <span class="copyright">© 2026 Hi-Tech College</span>
+  </footer>
+</body>
+</html>

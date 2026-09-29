@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123b32">
+  <meta name="description" content="Explore sample talks, workshops, and community events at Hi-Tech College.">
+  <title>Events | Hi-Tech College</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html#home" aria-label="Hi-Tech College home"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>HI-TECH <b>COLLEGE</b></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="courses.html">Study</a><a href="research.html">Research</a><a href="events.html" aria-current="page">Events</a><a href="updates.html">Updates</a><a href="campus.html">Campus life</a><a href="about.html">About</a><a href="login.html">Login</a><a href="portal.html">Portal preview</a><a class="nav-apply" href="admissions.html">Apply now <span aria-hidden="true">↗</span></a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><span aria-hidden="true">◐</span><span>Dark mode</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero events-hero" aria-labelledby="events-title">
+      <div class="page-hero-content"><p class="eyebrow light"><span class="eyebrow-line"></span> Talks, workshops, and campus life</p><h1 id="events-title">Make time<br><span>to meet.</span></h1><p>Find a new idea, a useful skill, or a few people working on questions like yours.</p></div>
+    </section>
+
+    <section class="events-section section-pad" aria-labelledby="events-list-title">
+      <div class="events-notice"><span class="demo-dot"></span><p>Sample campus calendar · dates and events are illustrative, not official college listings.</p></div>
+      <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> Upcoming</p><h2 id="events-list-title">Find your <span>next thing.</span></h2></div><p class="section-description">Search the calendar or narrow it by event type. RSVP selections stay in this browser preview.</p></div>
+      <div class="events-toolbar">
+        <label class="event-search"><span aria-hidden="true">⌕</span><input id="event-search" type="search" placeholder="Search events, topics, places" aria-label="Search events, topics, and places"></label>
+        <div class="event-filters" role="group" aria-label="Filter events">
+          <button type="button" data-event-filter="all" aria-pressed="true">All events</button>
+          <button type="button" data-event-filter="talk">Talks</button>
+          <button type="button" data-event-filter="workshop">Workshops</button>
+          <button type="button" data-event-filter="community">Community</button>
+        </div>
+      </div>
+      <div class="events-summary"><span id="event-count" aria-live="polite">6 events</span><div><button type="button" id="my-events-toggle" aria-pressed="false">My RSVPs <span id="my-event-count">0</span></button><button type="button" id="export-events" disabled>Export calendar ↓</button></div></div>
+      <div class="event-list" id="event-list">
+        <article class="event-row" data-event-id="open-lab" data-category="workshop" data-date="2026-10-01" data-start="16:00" data-end="17:30">
+          <time class="event-date" datetime="2026-10-01"><span>OCT</span><b>01</b><small>THU</small></time><div class="event-kind">WORKSHOP</div><div class="event-info"><h3>Open Project Lab</h3><p>Bring an early idea or a project question. Work alongside students across computing and design.</p><div><span>Computing Lab A204</span><span>4:00–5:30 PM</span></div></div><button class="event-rsvp" type="button" data-rsvp="open-lab" aria-pressed="false">RSVP <span aria-hidden="true">+</span></button>
+        </article>
+        <article class="event-row" data-event-id="responsible-ai" data-category="talk" data-date="2026-10-08" data-start="17:00" data-end="18:00">
+          <time class="event-date" datetime="2026-10-08"><span>OCT</span><b>08</b><small>THU</small></time><div class="event-kind">TALK</div><div class="event-info"><h3>Who Is AI For?</h3><p>A sample panel on useful, understandable, and accountable AI systems.</p><div><span>Forum 2</span><span>5:00–6:00 PM</span></div></div><button class="event-rsvp" type="button" data-rsvp="responsible-ai" aria-pressed="false">RSVP <span aria-hidden="true">+</span></button>
+        </article>
+        <article class="event-row" data-event-id="design-critique" data-category="workshop" data-date="2026-10-15" data-start="15:30" data-end="17:00">
+          <time class="event-date" datetime="2026-10-15"><span>OCT</span><b>15</b><small>THU</small></time><div class="event-kind">WORKSHOP</div><div class="event-info"><h3>Make, Test, Repeat</h3><p>Try a short feedback loop: share a prototype, ask a focused question, and improve one detail.</p><div><span>Design Studio 4</span><span>3:30–5:00 PM</span></div></div><button class="event-rsvp" type="button" data-rsvp="design-critique" aria-pressed="false">RSVP <span aria-hidden="true">+</span></button>
+        </article>
+        <article class="event-row" data-event-id="climate-conversation" data-category="talk" data-date="2026-10-21" data-start="12:00" data-end="13:00">
+          <time class="event-date" datetime="2026-10-21"><span>OCT</span><b>21</b><small>WED</small></time><div class="event-kind">TALK</div><div class="event-info"><h3>Climate, Data &amp; Place</h3><p>A sample conversation about combining local knowledge with environmental data.</p><div><span>Room B110</span><span>12:00–1:00 PM</span></div></div><button class="event-rsvp" type="button" data-rsvp="climate-conversation" aria-pressed="false">RSVP <span aria-hidden="true">+</span></button>
+        </article>
+        <article class="event-row" data-event-id="portfolio-night" data-category="community" data-date="2026-10-28" data-start="17:30" data-end="19:00">
+          <time class="event-date" datetime="2026-10-28"><span>OCT</span><b>28</b><small>WED</small></time><div class="event-kind">COMMUNITY</div><div class="event-info"><h3>Work-in-Progress Night</h3><p>Share something unfinished, find collaborators, and celebrate the process—not just the polish.</p><div><span>Campus Commons</span><span>5:30–7:00 PM</span></div></div><button class="event-rsvp" type="button" data-rsvp="portfolio-night" aria-pressed="false">RSVP <span aria-hidden="true">+</span></button>
+        </article>
+        <article class="event-row" data-event-id="student-welcome" data-category="community" data-date="2026-11-05" data-start="16:30" data-end="18:00">
+          <time class="event-date" datetime="2026-11-05"><span>NOV</span><b>05</b><small>THU</small></time><div class="event-kind">COMMUNITY</div><div class="event-info"><h3>New Connections</h3><p>An informal welcome for students looking to meet a club, project group, or new friend.</p><div><span>Campus Commons</span><span>4:30–6:00 PM</span></div></div><button class="event-rsvp" type="button" data-rsvp="student-welcome" aria-pressed="false">RSVP <span aria-hidden="true">+</span></button>
+        </article>
+      </div>
+      <p class="event-empty" id="event-empty" hidden>No events match your search. Try another topic or event type.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="index.html#home" aria-label="Hi-Tech College home"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>HI-TECH <b>COLLEGE</b></span></a><p>Curiosity has a place here.</p><a class="back-top" href="#top">Back to top ↑</a><span class="copyright">© 2026 Hi-Tech College</span></footer>
+</body>
+</html>

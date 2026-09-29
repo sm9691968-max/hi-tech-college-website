@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123b32">
+  <meta name="description" content="Read sample campus, research, academic, and admissions updates from Hi-Tech College.">
+  <title>Updates | Hi-Tech College</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html#home" aria-label="Hi-Tech College home"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>HI-TECH <b>COLLEGE</b></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="courses.html">Study</a><a href="research.html">Research</a><a href="events.html">Events</a><a href="updates.html" aria-current="page">Updates</a><a href="campus.html">Campus life</a><a href="about.html">About</a><a href="login.html">Login</a><a href="portal.html">Portal preview</a><a class="nav-apply" href="admissions.html">Apply now <span aria-hidden="true">↗</span></a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><span aria-hidden="true">◐</span><span>Dark mode</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero updates-hero" aria-labelledby="updates-title">
+      <div class="page-hero-content"><p class="eyebrow light"><span class="eyebrow-line"></span> Notes from the college</p><h1 id="updates-title">Ideas in<br><span>circulation.</span></h1><p>Browse sample campus news, research notes, academic reminders, and community highlights.</p></div>
+    </section>
+    <section class="updates-section section-pad" aria-labelledby="updates-list-title">
+      <div class="updates-preview-note"><span class="demo-dot"></span><p>Sample updates feed · These 20 announcements are illustrative, not official college news.</p></div>
+      <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> Recent notes</p><h2 id="updates-list-title">What’s <span>happening.</span></h2></div><p class="section-description">Use search or topic filters to browse the sample feed.</p></div>
+      <div class="updates-toolbar">
+        <label class="updates-search"><span aria-hidden="true">⌕</span><input id="updates-search" type="search" placeholder="Search updates" aria-label="Search updates"></label>
+        <div class="updates-filters" role="group" aria-label="Filter updates by topic">
+          <button type="button" data-update-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-update-filter="academics">Academics</button>
+          <button type="button" data-update-filter="research">Research</button>
+          <button type="button" data-update-filter="campus">Campus</button>
+          <button type="button" data-update-filter="community">Community</button>
+        </div>
+      </div>
+      <p class="updates-count" id="updates-count" aria-live="polite">20 updates</p>
+      <div class="updates-list" id="updates-list">
+        <article class="update-item" data-category="research"><time datetime="2026-09-29">SEP 29, 2026</time><span>RESEARCH</span><div><h3>Student research forum invites project questions</h3><p>A sample invitation for students to share early ideas with faculty and fellow researchers.</p></div><a href="research.html" aria-label="Explore sample research areas">↗</a></article>
+        <article class="update-item" data-category="academics"><time datetime="2026-09-28">SEP 28, 2026</time><span>ACADEMICS</span><div><h3>Course outlines now available to explore</h3><p>Review illustrative topics and project examples in the course catalog.</p></div><a href="courses.html" aria-label="Browse sample course outlines">↗</a></article>
+        <article class="update-item" data-category="campus"><time datetime="2026-09-27">SEP 27, 2026</time><span>CAMPUS</span><div><h3>A new week of campus events</h3><p>Browse sample workshops, talks, and community gatherings on the events page.</p></div><a href="events.html" aria-label="Browse sample campus events">↗</a></article>
+        <article class="update-item" data-category="community"><time datetime="2026-09-26">SEP 26, 2026</time><span>COMMUNITY</span><div><h3>Meet someone outside your usual field</h3><p>A sample community prompt: bring one question and find a new perspective to explore.</p></div><a href="campus.html" aria-label="Explore sample campus life">↗</a></article>
+        <article class="update-item" data-category="academics"><time datetime="2026-09-25">SEP 25, 2026</time><span>ACADEMICS</span><div><h3>Project work starts with a good brief</h3><p>See a sample challenge and the steps students might take to test an idea.</p></div><a href="index.html#learning-method-title" aria-label="See a sample learning brief">↗</a></article>
+        <article class="update-item" data-category="research"><time datetime="2026-09-24">SEP 24, 2026</time><span>RESEARCH</span><div><h3>What makes an AI system accountable?</h3><p>A sample reading prompt about transparency, evaluation, and the people affected by automated tools.</p></div><a href="research.html" aria-label="Explore sample research areas">↗</a></article>
+        <article class="update-item" data-category="campus"><time datetime="2026-09-23">SEP 23, 2026</time><span>CAMPUS</span><div><h3>Find a space that fits how you work</h3><p>Explore sample campus spaces for focused study, shared projects, and informal conversations.</p></div><a href="campus.html" aria-label="Explore sample campus spaces">↗</a></article>
+        <article class="update-item" data-category="community"><time datetime="2026-09-22">SEP 22, 2026</time><span>COMMUNITY</span><div><h3>Work in progress is welcome</h3><p>A sample showcase invitation celebrating drafts, experiments, and lessons learned.</p></div><a href="events.html" aria-label="Explore sample events">↗</a></article>
+        <article class="update-item" data-category="academics"><time datetime="2026-09-21">SEP 21, 2026</time><span>ACADEMICS</span><div><h3>Try a different way into the problem</h3><p>Sketch, model, interview, or write before deciding what to build.</p></div><a href="courses.html" aria-label="Browse course examples">↗</a></article>
+        <article class="update-item" data-category="research"><time datetime="2026-09-20">SEP 20, 2026</time><span>RESEARCH</span><div><h3>Climate questions cross disciplines</h3><p>A sample research note connecting data, engineering, policy, and local knowledge.</p></div><a href="research.html" aria-label="Explore sample research areas">↗</a></article>
+        <article class="update-item" data-category="campus"><time datetime="2026-09-19">SEP 19, 2026</time><span>CAMPUS</span><div><h3>Take a look around the college</h3><p>See sample photos of learning spaces and student collaboration.</p></div><a href="campus.html" aria-label="View sample campus photos">↗</a></article>
+        <article class="update-item" data-category="community"><time datetime="2026-09-18">SEP 18, 2026</time><span>COMMUNITY</span><div><h3>Share a skill with your project group</h3><p>Each person brings something useful. Make those strengths visible early.</p></div><a href="campus.html" aria-label="Explore sample campus community">↗</a></article>
+        <article class="update-item" data-category="academics"><time datetime="2026-09-17">SEP 17, 2026</time><span>ACADEMICS</span><div><h3>Good feedback gives you a next move</h3><p>Ask one focused question when sharing a draft or prototype.</p></div><a href="index.html#learning-method-title" aria-label="Read about the learning approach">↗</a></article>
+        <article class="update-item" data-category="research"><time datetime="2026-09-16">SEP 16, 2026</time><span>RESEARCH</span><div><h3>Design for people beyond the default</h3><p>A sample reminder to include accessibility and diverse needs in early design decisions.</p></div><a href="research.html" aria-label="Explore inclusive systems research">↗</a></article>
+        <article class="update-item" data-category="campus"><time datetime="2026-09-15">SEP 15, 2026</time><span>CAMPUS</span><div><h3>Build a study routine that leaves room</h3><p>Combine focused time, breaks, and a chance to ask for help when you need it.</p></div><a href="campus.html" aria-label="Explore campus life">↗</a></article>
+        <article class="update-item" data-category="community"><time datetime="2026-09-14">SEP 14, 2026</time><span>COMMUNITY</span><div><h3>Start small, learn in public</h3><p>A sample invitation to bring one early idea to a peer discussion.</p></div><a href="events.html" aria-label="Browse sample campus events">↗</a></article>
+        <article class="update-item" data-category="academics"><time datetime="2026-09-13">SEP 13, 2026</time><span>ACADEMICS</span><div><h3>Make your process part of the portfolio</h3><p>Keep a record of sketches, experiments, decisions, and what changed.</p></div><a href="courses.html" aria-label="Browse sample courses">↗</a></article>
+        <article class="update-item" data-category="research"><time datetime="2026-09-12">SEP 12, 2026</time><span>RESEARCH</span><div><h3>Data needs context before conclusions</h3><p>A sample note to check how information was gathered and what may be missing.</p></div><a href="research.html" aria-label="Explore sample research areas">↗</a></article>
+        <article class="update-item" data-category="campus"><time datetime="2026-09-11">SEP 11, 2026</time><span>CAMPUS</span><div><h3>There is more than one way to belong</h3><p>Try a club, a lab, a reading group, or a conversation after class.</p></div><a href="campus.html" aria-label="Explore sample campus life">↗</a></article>
+        <article class="update-item" data-category="community"><time datetime="2026-09-10">SEP 10, 2026</time><span>COMMUNITY</span><div><h3>Curiosity makes a strong starting point</h3><p>Bring a question you cannot stop thinking about and see where it leads.</p></div><a href="about.html" aria-label="Learn about the college">↗</a></article>
+      </div>
+      <p class="updates-empty" id="updates-empty" hidden>No updates match that search. Try another term or topic.</p>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="index.html#home" aria-label="Hi-Tech College home"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>HI-TECH <b>COLLEGE</b></span></a><p>Curiosity has a place here.</p><a class="back-top" href="#top">Back to top ↑</a><span class="copyright">© 2026 Hi-Tech College</span></footer>
+</body>
+</html>

@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hi-Tech College//Events Preview//EN
+BEGIN:VEVENT
+UID:responsible-ai@hitechcollege.example
+DTSTART:20261008T170000
+DTEND:20261008T180000
+SUMMARY:Who Is AI For?
+DESCRIPTION:A sample panel on useful\, understandable\, and accountable AI systems.
+LOCATION:Forum 2
+END:VEVENT
+END:VCALENDAR
